@@ -1,0 +1,22 @@
+to create the backend: 
+
+step one: npm init -y
+
+npm i express
+
+npm i nodemon -D (the D makes it a dev dependency)
+
+You can give the name property of the package.json anything you 
+like. However it's goo pracitce to leave as the name of the backend folder.
+in this case 'backend'.
+
+In the script object of the package.json, remove the 'test' property and replace 
+with 'start' and give it a value of 'node server'
+
+Add another property called 'dev' and give it value of 'nodemon server'
+
+next you create a .gitignore file in the root folder  of the backend project.
+
+we now create the server file.
+
+
