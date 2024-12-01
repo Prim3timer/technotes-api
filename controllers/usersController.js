@@ -1,14 +1,18 @@
 const User = require('../models/User')
 const Note = require('../models/Note')
+
+// saves us the effort of always writting try/catch blocks
 const asyncHandler = require('express-async-handler')
+
+// used to hash passwords before saving
 const bcrypt = require('bcrypt')
 
 // @desc Get all users
 // @route GET /users
 // @access Private
 const getAllUsers = asyncHandler(async (req, res) => {
-    // Get all users from MongoDB
-    const users = await User.find().select('-password').lean()
+    // Get all users from MongoDB 
+    const users = await User.find().select('-password').lean() 
 
     // If no users 
     if (!users?.length) {
@@ -35,11 +39,12 @@ const createNewUser = asyncHandler(async (req, res) => {
 
 
     if (duplicate) {
+        // status code 409 stands for conflict
         return res.status(409).json({ message: 'Duplicate username' })
     }
 
     // Hash password 
-    const hashedPwd = await bcrypt.hash(password, 10) // salt rounds
+    const hashedPwd = await bcrypt.hash(password, 10) // 10 salt rounds
 
     const userObject = { username, "password": hashedPwd, roles }
 
@@ -61,6 +66,7 @@ const updateUser = asyncHandler(async (req, res) => {
 
     // Confirm data 
     if (!id || !username || !Array.isArray(roles) || !roles.length || typeof active !== 'boolean') {
+        // status code 400 means bad request      
         return res.status(400).json({ message: 'All fields except password are required' })
     }
 
@@ -118,10 +124,14 @@ const deleteUser = asyncHandler(async (req, res) => {
     }
 
     const result = await user.deleteOne()
+   const reply = `Username ${user.username} with ID ${user._id} deleted`
 
-    const reply = `Username ${result.username} with ID ${result._id} deleted`
 
-    res.json(reply)
+       res.json(reply)
+
+    
+
+
 })
 
 module.exports = {

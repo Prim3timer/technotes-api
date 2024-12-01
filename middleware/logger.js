@@ -6,10 +6,14 @@ const path = require('path')
 
 const logEvents = async (message, logFileName) => {
     const dateTime = `${format(new Date(), 'yyyy MM dd\tHH:mm:ss')}`
+
+    // the /n at end means the next input starts in a new line
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`
 
     try {
+        // if the logs directory does not exist
         if (!fs.existsSync(path.join(__dirname, '..', 'logs'))) {
+            // create one
             await fsPromises.mkdir(path.join(__dirname, '..', 'logs'))
         }
         await fsPromises.appendFile(path.join(__dirname, '..', 'logs', logFileName), logItem)

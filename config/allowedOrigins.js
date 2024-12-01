@@ -1,7 +1,7 @@
 const allowedOrigins = [
-    // 'http://localhost:3000',
-    // 'https://www.dandrepairshop.com',
-    'https://technotes-zbnt.onrender.com'
+    'http://localhost:3000',
+    // 'https://technotes-zbnt.onrender.com',
+    'https://www.technotes-zbnt.onrender.com'
 ]
 
-module.exports = allowedOrigins
+module.exports = allowedOrigins 

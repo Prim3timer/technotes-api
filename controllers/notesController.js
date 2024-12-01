@@ -1,4 +1,3 @@
-
 const Note = require('../models/Note')
 const User = require('../models/User')
 const asyncHandler = require('express-async-handler')
@@ -20,7 +19,8 @@ const getAllNotes = asyncHandler(async (req, res) => {
     // You could also do this with a for...of loop
     const notesWithUser = await Promise.all(notes.map(async (note) => {
         const user = await User.findById(note.user).lean().exec()
-        return { ...note, username: user.username }
+        console.log(note)
+        return { ...note, username: user }
     }))
 
     res.json(notesWithUser)

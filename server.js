@@ -13,7 +13,7 @@ const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const errorHandler = require('./middleware/errorHandler')
 const {logEvents} = require('./middleware/logger')
-const PORT = process.env.PORT || 3500
+const PORT = process.env.PORT || 5000
 const authRouter = require('./routes/authRoutes')
 const usersRouter = require('./routes/userRoutes')
 const notesRouter = require('./routes/noteRoutes')
@@ -36,6 +36,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 // telling express where to find statice files eg css and image
+// express.static is a middleware
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/root'))  
@@ -61,6 +62,8 @@ mongoose.connection.once('open', ()=> {
     console.log('connected to mongoDB')
     app.listen(PORT, ()=> console.log(`Server runnning on port ${PORT}`))
 })
+
+ 
 mongoose.connection.on('error', (error) => {
     console.log(error)
     logEvents(`${error.no}: ${error.code}\t ${error.syscall}\t${error.hostname}`,
