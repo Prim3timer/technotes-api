@@ -1,0 +1,42 @@
+2024 11 30	14:48:24	8061aa9a-6076-4a55-ad48-285ad3660db8	Error: Not allowed by CORS	OPTIONS	/auth	http://localhost:3000
+2024 11 30	14:48:33	6dca6b2e-1d69-4602-a1ff-108d9c4f4445	Error: Not allowed by CORS	OPTIONS	/auth	http://localhost:3000
+2024 11 30	14:49:30	a84ebfb6-b45a-423a-8bfd-c6dfd394bd8c	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	14:49:39	87914a22-7d66-46bb-92da-51b3f546b088	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	14:49:48	51ce4a11-e0d0-4601-87de-5fe73af67840	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:46:54	3d3a8e62-8093-41a9-9481-d6b74a00379e	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:55:21	0e5de078-f5d8-4574-9767-a5a51094893a	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:56:41	5edea820-3032-45de-be58-143eccc6befc	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:56:56	51e19d0f-087d-40cf-a822-03eb00e0bf59	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:56:57	5d87dcf9-2d48-4fa4-a9b8-c6f63504b527	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:57:05	2e636fb9-fd50-4060-b941-1081bd8d3ae8	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:57:21	71b0b929-bc49-4260-8872-5f6a61f53e81	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:57:37	b07d1fd3-7c70-49bb-8c0f-41d7eee7ec02	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:57:53	4602a97d-24d9-41e5-a5e0-745c6f6b382a	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	16:57:58	8c45182f-7deb-4586-8448-f9650f4efa8c	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	17:22:28	1e287ef1-9885-4e62-b819-5a710c976e5a	SyntaxError: Unexpected non-whitespace character after JSON at position 172	PATCH	/users	undefined
+2024 11 30	17:29:54	045383cc-aae8-47bf-bcbf-7acc3543719e	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	http://localhost:3000
+2024 11 30	17:37:09	3dead9b1-94fa-4557-abda-5b6b4358c73a	SyntaxError: Expected ',' or '}' after property value in JSON at position 64	POST	/users	undefined
+2024 11 30	17:39:18	53d2f157-faba-4d13-8822-e99fa85d4885	SyntaxError: Expected double-quoted property name in JSON at position 118	POST	/users	undefined
+2024 11 30	17:39:49	701abe02-5794-47c6-9bd4-a41f5af2545f	SyntaxError: Expected double-quoted property name in JSON at position 119	POST	/users	undefined
+2024 11 30	17:47:13	7dd570e1-a363-49ce-baef-e0404935e6d5	ReferenceError: reply is not defined	DELETE	/users	undefined
+2024 11 30	17:49:12	a57c9fdc-43a8-45f4-a923-8ffdb6c555bb	ReferenceError: reply is not defined	DELETE	/users	undefined
+2024 11 30	18:00:55	c6709776-1010-4626-b830-931f19b3b1b0	TypeError: Cannot read properties of null (reading 'username')	GET	/notes	undefined
+2024 11 30	18:02:46	e3c2d9d1-970f-4a83-9fc9-a53d5768e032	TypeError: Cannot read properties of null (reading 'title')	GET	/notes	http://localhost:3000
+2024 11 30	18:02:56	1b656015-67a8-44b2-886b-ce658e7d4a9b	TypeError: Cannot read properties of null (reading 'title')	GET	/notes	http://localhost:3000
+2024 11 30	18:03:11	271cc55d-aaca-4626-9cbe-bf6f903e7374	TypeError: Cannot read properties of null (reading 'title')	GET	/notes	http://localhost:3000
+2024 11 30	18:50:49	15c60b00-aad1-4f8a-9010-23017b1555f2	ReferenceError: username is not defined	GET	/notes	http://localhost:3000
+2024 11 30	18:50:51	dccdfc7e-5388-4692-8615-9416b054edfe	ReferenceError: username is not defined	GET	/notes	http://localhost:3000
+2024 11 30	18:51:04	fb6309a7-6cce-47b7-8334-9f11fbff5c0f	ReferenceError: username is not defined	GET	/notes	http://localhost:3000
+2024 11 30	22:05:03	9b0536b7-be14-4f25-9430-711c9407164d	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:05:19	f41fb618-7b94-4b43-aee7-7fa376e8fafc	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:05:35	d6e92744-8844-46ba-ae6a-b24601389bbb	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:05:51	30c26272-fb19-4f67-bd47-e2f7081da705	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:06:07	bda7384b-b5ae-4a79-9ac9-32b4754439e9	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:06:23	125b17c9-0421-4d37-8772-efdaf3e68889	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:06:37	653c1cbb-0222-4754-af5d-fc45e613b341	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:06:44	dafb44fa-686a-4f08-b5a4-2459841c81af	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:06:50	37788ade-9531-40a6-9716-ddc91ddcab57	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:07:05	0b085fb8-d5f9-464d-9ab8-9cf8a52ebdd4	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:07:16	02a0559f-5b36-4ba0-b1e6-89650406c23c	Error: Not allowed by CORS	OPTIONS	/notes	https://technotes-zbnt.onrender.com
+2024 11 30	22:56:45	ef647999-d742-4138-bac9-ba9b1e13076d	Error: Not allowed by CORS	OPTIONS	/auth	https://technotes-zbnt.onrender.com
+2024 11 30	22:56:48	d4449444-4fb0-4244-bfcd-6fe4710a68a9	Error: Not allowed by CORS	OPTIONS	/auth	https://technotes-zbnt.onrender.com
